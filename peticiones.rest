@@ -1,0 +1,24 @@
+GET http://localhost:3000/api/posts
+
+###
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+    "title": "Post de prueba",
+    "body": "Descripción del post",
+    "author": "Javier Ruíz",
+    "category": "naturaleza",
+    "createdAt": "2022-03-22 22:30"
+}
+
+###
+PUT http://localhost:3000/api/posts/622934f576a19787f10f207d
+Content-Type: application/json
+
+{
+    "body": "Descripción del post actualizada"
+}
+
+###
+DELETE http://localhost:3000/api/posts/622934f576a19787f10f207d
